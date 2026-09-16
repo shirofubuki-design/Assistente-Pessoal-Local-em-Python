@@ -1,212 +1,52 @@
-# Assistente-Pessoal-Local-em-Python
+🚀 Novo projeto no meu portfólio: J.A.R.V.I.S 2.0 — Assistente Pessoal Local em Python
 
-# 🤖 J.A.R.V.I.S 2.0 — Assistente Pessoal Local em Python
+Durante meus estudos em Python, Inteligência Artificial e Automação, decidi criar um projeto que unisse esses conhecimentos de forma prática.
 
-J.A.R.V.I.S é um assistente pessoal desenvolvido em **Python**, integrado ao **Ollama + Llama 3.2**, capaz de interpretar comandos em linguagem natural, executar automações no Windows, realizar pesquisas e armazenar informações localmente.
+Assim nasceu o J.A.R.V.I.S 2.0, um assistente pessoal local desenvolvido em Python e integrado ao Ollama + Llama 3.2. 🤖
 
-O projeto foi desenvolvido como parte dos meus estudos em **Python, Inteligência Artificial e Automação**, com foco na aplicação prática dos conhecimentos adquiridos.
+A ideia do projeto é permitir que o usuário converse naturalmente com o assistente e utilize comandos para executar algumas tarefas no computador.
 
-## 🧠 Como funciona
+🧠 Como funciona?
 
-O projeto utiliza três componentes principais:
+O projeto utiliza:
 
-* **Python** — responsável pela lógica, automações e execução das ações.
-* **Ollama + Llama 3.2** — responsável pela interpretação de linguagem natural e conversação.
-* **JSON** — utilizado como sistema simples de memória persistente.
+🐍 Python para lógica, automações e execução das ações
+🤖 Ollama + Llama 3.2 para interpretação de linguagem natural e conversação
+💾 JSON para armazenamento de memória local
+🌐 Requests para comunicação com o Ollama
+🔎 Regex para interpretação e tratamento de informações
+💻 Subprocess e Webbrowser para automações no Windows
 
-O modelo de IA não executa comandos diretamente.
+Uma das partes que mais gostei de desenvolver foi a forma como os comandos são tratados.
 
-Primeiro, o JARVIS interpreta o que o usuário deseja fazer e classifica a intenção. Depois, o Python decide qual função deve ser executada.
+Por exemplo:
 
-Exemplo:
-
-```text
 Usuário:
-Abra o bloco de notas
+“Abra o bloco de notas”
 
-IA:
-{
-    "acao": "abrir_programa",
-    "alvo": "bloco de notas"
-}
+O modelo identifica a intenção:
 
-Python:
-Executa o bloco de notas.
-```
+abrir_programa → bloco de notas
 
-## ⚙️ Funcionalidades
+Depois disso, o Python fica responsável por executar a ação.
 
-Atualmente o JARVIS consegue:
+Ou seja, a IA interpreta o comando, mas não executa diretamente qualquer ação no computador.
 
-*  Conversar utilizando IA local
-*  Armazenar informações sobre o usuário
-*  Abrir sites
-*  Abrir programas do Windows
-*  Realizar pesquisas no Google
-*  Informar horário
-*  Informar data
-*  Abrir o explorador de arquivos
-*  Abrir PowerShell e CMD
-*  Abrir VS Code
-*  Abrir calculadora
-*  Abrir Paint
-*  Informar status dos módulos
-*  Interpretar comandos em linguagem natural
+⚙️ Atualmente o JARVIS consegue conversar utilizando IA local, abrir sites e programas do Windows, realizar pesquisas no Google, informar data e horário, abrir VS Code, PowerShell, CMD, calculadora e Paint, além de armazenar algumas informações do usuário em memória local.
 
-##  Exemplos de comandos
+🔒 Outro ponto importante do projeto é a privacidade: o modelo roda localmente através do Ollama e as informações armazenadas pelo assistente ficam em um arquivo JSON no próprio computador.
 
-```text
-Abra o Google
+📚 Durante o desenvolvimento, pude praticar conceitos de Python, lógica de programação, APIs, automação, JSON, Inteligência Artificial e processamento de linguagem natural.
 
-Abra o YouTube
+E o projeto ainda está evoluindo.
 
-Abra o GitHub
+Algumas das próximas funcionalidades que pretendo implementar são reconhecimento e resposta por voz, interface gráfica, histórico de conversas, arquitetura modular e novas automações.
 
-Abra o bloco de notas
+Esse projeto faz parte do meu processo de aprendizado e da minha transição profissional para a área de Tecnologia, e pretendo continuar melhorando cada versão conforme avanço nos estudos.
 
-Quero fazer algumas contas
+💻 Projeto completo no GitHub:
+https://github.com/shirofubuki-design/Assistente-Pessoal-Local-em-Python
 
-Abra o VS Code
+Feedbacks e sugestões são muito bem-vindos! 🚀
 
-Pesquise cursos gratuitos de Python
-
-Que horas são?
-
-Qual é a data de hoje?
-
-Lembre que meu nome é Shiro
-
-O que você lembra sobre mim?
-
-Status
-
-Sair
-```
-
-##  Tecnologias utilizadas
-
-* Python 3
-* Ollama
-* Llama 3.2
-* Requests
-* JSON
-* Regex
-* Subprocess
-* Webbrowser
-
-##  Estrutura
-
-```text
-JARVIS-Python/
-│
-├── main.py
-├── README.md
-├── requirements.txt
-├── memoria.example.json
-├── .gitignore
-├── LICENSE
-│
-└── docs/
-```
-
-##  Como executar
-
-### 1. Clone o projeto
-
-```bash
-git clone URL_DO_REPOSITORIO
-```
-
-Entre na pasta:
-
-```bash
-cd JARVIS-Python
-```
-
-### 2. Crie um ambiente virtual
-
-```bash
-python -m venv .venv
-```
-
-No Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-### 3. Instale as dependências
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Instale o Ollama
-
-O projeto utiliza o Ollama para executar a inteligência artificial localmente.
-
-Depois de instalar o Ollama, baixe o modelo:
-
-```bash
-ollama pull llama3.2
-```
-
-Execute:
-
-```bash
-ollama run llama3.2
-```
-
-### 5. Execute o JARVIS
-
-```bash
-python main.py
-```
-
-## 🔒 Privacidade
-
-O projeto utiliza IA executada localmente através do Ollama.
-
-As informações memorizadas pelo JARVIS são armazenadas localmente em um arquivo JSON.
-
-O arquivo pessoal `memoria.json` não é enviado para o GitHub.
-
-## 🗺️ Roadmap
-
-Algumas funcionalidades que pretendo implementar futuramente:
-
-*  Reconhecimento de voz
-*  Respostas por voz
-*  Interface gráfica
-*  Consulta de clima
-*  Gerenciamento de arquivos
-*  Controle de músicas
-*  Arquitetura modular
-*  Histórico de conversas
-*  Novas automações
-*  Sistema de memória aprimorado
-
-##  Objetivo do projeto
-
-Este projeto faz parte do meu processo de aprendizado e transição profissional para a área de Tecnologia.
-
-Meu objetivo é aplicar na prática conceitos de:
-
-* Python
-* Lógica de programação
-* APIs
-* Inteligência Artificial
-* Automação
-* Manipulação de JSON
-* Processamento de linguagem natural
-* Desenvolvimento de software
-
-O projeto continuará sendo atualizado conforme avanço nos meus estudos.
-
----
-
-### 👨‍💻 Desenvolvedor
-
-Desenvolvido por **Bruno Dantas**
-
-Estudante de Análise e Desenvolvimento de Sistemas, interessado em Python, Inteligência Artificial, automação e desenvolvimento de software.
+#Python #Programacao #InteligenciaArtificial #Automacao #Ollama #Llama #DesenvolvimentoDeSoftware #GitHub #Portfolio #Tecnologia #ADS #EstudanteDeTI
