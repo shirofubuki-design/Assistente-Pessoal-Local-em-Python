@@ -38,22 +38,22 @@ Executa o bloco de notas.
 
 Atualmente o JARVIS consegue:
 
-* 🤖 Conversar utilizando IA local
-* 🧠 Armazenar informações sobre o usuário
-* 🌐 Abrir sites
-* 💻 Abrir programas do Windows
-* 🔎 Realizar pesquisas no Google
-* 🕐 Informar horário
-* 📅 Informar data
-* 📂 Abrir o explorador de arquivos
-* 🖥️ Abrir PowerShell e CMD
-* 💻 Abrir VS Code
-* 🧮 Abrir calculadora
-* 🎨 Abrir Paint
-* 📊 Informar status dos módulos
-* 🧠 Interpretar comandos em linguagem natural
+*  Conversar utilizando IA local
+*  Armazenar informações sobre o usuário
+*  Abrir sites
+*  Abrir programas do Windows
+*  Realizar pesquisas no Google
+*  Informar horário
+*  Informar data
+*  Abrir o explorador de arquivos
+*  Abrir PowerShell e CMD
+*  Abrir VS Code
+*  Abrir calculadora
+*  Abrir Paint
+*  Informar status dos módulos
+*  Interpretar comandos em linguagem natural
 
-## 💬 Exemplos de comandos
+##  Exemplos de comandos
 
 ```text
 Abra o Google
@@ -83,7 +83,7 @@ Status
 Sair
 ```
 
-## 🛠️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 * Python 3
 * Ollama
@@ -94,7 +94,7 @@ Sair
 * Subprocess
 * Webbrowser
 
-## 📁 Estrutura
+##  Estrutura
 
 ```text
 JARVIS-Python/
@@ -109,7 +109,7 @@ JARVIS-Python/
 └── docs/
 ```
 
-## 🚀 Como executar
+##  Como executar
 
 ### 1. Clone o projeto
 
@@ -175,18 +175,18 @@ O arquivo pessoal `memoria.json` não é enviado para o GitHub.
 
 Algumas funcionalidades que pretendo implementar futuramente:
 
-* 🎙️ Reconhecimento de voz
-* 🔊 Respostas por voz
-* 🖥️ Interface gráfica
-* 🌦️ Consulta de clima
-* 📁 Gerenciamento de arquivos
-* 🎵 Controle de músicas
-* 🧩 Arquitetura modular
-* 📝 Histórico de conversas
-* 🔌 Novas automações
-* 🧠 Sistema de memória aprimorado
+*  Reconhecimento de voz
+*  Respostas por voz
+*  Interface gráfica
+*  Consulta de clima
+*  Gerenciamento de arquivos
+*  Controle de músicas
+*  Arquitetura modular
+*  Histórico de conversas
+*  Novas automações
+*  Sistema de memória aprimorado
 
-## 🎯 Objetivo do projeto
+##  Objetivo do projeto
 
 Este projeto faz parte do meu processo de aprendizado e transição profissional para a área de Tecnologia.
 
