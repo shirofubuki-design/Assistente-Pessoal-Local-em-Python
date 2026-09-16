@@ -1,0 +1,1 @@
+# Assistente-Pessoal-Local-em-Python
